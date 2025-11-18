@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malo-Valentin | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">MV<span>.</span></h1>
+      <ul class="nav-links">
+        <button id="lang-toggle" class="btn-lang">
+          <img id="lang-flag" src="gb-flag.png" alt="EN" class="flag-icon">
+          <span id="lang-text">EN</span>
+        </button>
+        <li><a href="#hero" id="nav_home">Accueil</a></li>
+        <li><a href="#about" id="nav_about">À propos</a></li>
+        <li><a href="#projects" id="nav_projects">Projets</a></li>
+        <li><a href="#skills" id="nav_skills">Compétences</a></li>
+        <li><a href="#timeline" id="nav_timeline">Parcours</a></li>
+        <li><a href="#contact" id="nav_contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+<section id="hero">
+  <div class="hero-content">
+    <h2 id="hero_title">Bonjour, je suis Malo-Valentin</h2>
+    <h3 id="hero_subtitle">Étudiant en Bachelor Informatique</h3>
+    <p id="hero_text">Passionné par la cybersécurité, le développement web et l’innovation numérique.</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2 id="about_title">À propos</h2>
+  <p id="about_text">Je suis un étudiant en informatique curieux et motivé, avec une affinité particulière pour la cybersécurité et la création d’expériences web modernes.</p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2 id="projects_title">Mes Projets</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3 id="project1_title">Projet 1</h3>
+      <p id="project1_text">Un site web interactif utilisant HTML, CSS et JavaScript.</p>
+    </div>
+    <div class="project-card">
+      <h3 id="project2_title">Projet 2</h3>
+      <p id="project2_text">Application de cybersécurité développée en Python.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <h2 id="skills_title">Compétences</h2>
+  <div class="skills-list">
+    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+    <span>Python</span><span id="skill_cyber">Cybersécurité</span><span>Linux</span>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section id="timeline" class="section">
+  <h2 id="timeline_title">Mon Parcours</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <span class="date", id="timeline1_date">2025 - Présent</span>
+      <h3 id="timeline1_title">Bachelor Informatique - ESGI</h3>
+      <p id="timeline1_text">Découverte de différentes spécialisations.</p>
+    </div>
+    <div class="timeline-item">
+      <span class="date", id="timeline2_date">2025</span>
+      <h3 id="timeline2_title">Baccalauréat Technologique</h3>
+      <p id="timeline2_text">Bac STI2D Spécialité SIN</p>
+    </div>
+  </div>
+</section>
+
+<!-- LINKEDIN -->
+<section id="socials" class="section">
+  <h2 id="socials_title">Retrouvez-moi</h2>
+  <a href="https://www.linkedin.com/in/ton-profil" target="_blank" class="linkedin-btn">
+    <img src="logo-linkedin.png" alt="LinkedIn" class="linkedin-logo" />
+    <span id="linkedin_btn">Mon LinkedIn</span>
+  </a>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2 id="contact_title">Contact</h2>
+  <form id="contactForm" action="https://formspree.io/f/xpwogdbg" method="POST">
+    <input type="text" id="name_placeholder" name="name" placeholder="Votre nom" required>
+    <input type="email" id="email_placeholder" name="email" placeholder="Votre email" required>
+    <textarea id="message_placeholder" name="message" rows="5" placeholder="Votre message" required></textarea>
+    <button type="submit" class="btn-submit" id="contact_button">Envoyer</button>
+  </form>
+  <div id="successMessage" class="hidden">✅ Message envoyé avec succès !</div>
+</section>
+
+
+
+  <footer>
+    <p>© 2025 Malo-Valentin Lequy • Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
