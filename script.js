@@ -21,6 +21,13 @@ form.addEventListener('submit', async (e) => {
   }
 });
 
+const burger = document.getElementById('burger');
+const navLinks = document.getElementById('nav-links');
+
+burger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
+
 // === Animation de la timeline au scroll (cascade) ===
 const timelineItems = document.querySelectorAll('.timeline-item');
 
@@ -43,13 +50,14 @@ const translations = {
     hero_title: "Bonjour, je suis Malo-Valentin",
     hero_subtitle: "Étudiant en Bachelor Informatique",
     hero_text: "Passionné par la cybersécurité, le développement web et l’innovation numérique.",
+    cv_download: "📄 Télécharger mon CV",
     about_title: "À propos",
     about_text: "Je suis un étudiant en informatique curieux et motivé, avec une affinité particulière pour la cybersécurité et la création d’expériences web modernes.",
     projects_title: "Mes Projets",
-    project1_title: "Projet 1",
-    project1_text: "Un site web interactif utilisant HTML, CSS et JavaScript.",
-    project2_title: "Projet 2",
-    project2_text: "Application de cybersécurité développée en Python.",
+    project1_title: "Simulation d'un réseau d'ordinateur",
+    project1_text: "Simulation complète d’un réseau informatique avec Cisco Packet Tracer.",
+    project2_title: "Site web pour un événement Tech",
+    project2_text: "Création d'un site web moderne pour un événement technologique fictif.",
     skills_title: "Compétences",
     skill_cyber: "Cybersécurité",
     timeline_title: "Mon Parcours",
@@ -77,13 +85,14 @@ const translations = {
     hero_title: "Hello, I'm Malo-Valentin",
     hero_subtitle: "Computer Science Bachelor's Student",
     hero_text: "Passionate about cybersecurity, web development, and digital innovation.",
+    cv_download: "📄 Download my CV",
     about_title: "About",
     about_text: "I am a curious and motivated computer science student, with a particular interest in cybersecurity and creating modern web experiences.",
     projects_title: "Projects",
-    project1_title: "Project 1",
-    project1_text: "An interactive website using HTML, CSS, and JavaScript.",
-    project2_title: "Project 2",
-    project2_text: "A cybersecurity application developed in Python.",
+    project1_title: "Computer Network Simulation",
+    project1_text: "Complete simulation of a computer network using Cisco Packet Tracer.",
+    project2_title: "Tech Event Website",
+    project2_text: "Creation of a modern website for a fictional tech event.",
     skills_title: "Skills",
     skill_cyber: "Cybersecurity",
     timeline_title: "Journey",
