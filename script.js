@@ -1,3 +1,17 @@
+// Affiche la popup au chargement
+window.addEventListener('load', () => {
+  const popup = document.getElementById('dev-popup');
+  const closeBtn = document.getElementById('close-popup');
+
+  // Affiche la popup
+  popup.style.display = 'flex';
+
+  // Ferme la popup au clic sur le bouton
+  closeBtn.addEventListener('click', () => {
+    popup.style.display = 'none';
+  });
+});
+
 // === Formulaire de contact avec animation ===
 const form = document.getElementById('contactForm');
 const successMessage = document.getElementById('successMessage');
@@ -118,7 +132,17 @@ const translations = {
   }
 };
 
-let currentLang = "fr";
+
+// Détecter la langue du navigateur
+const userLang = navigator.language || navigator.userLanguage; // ex: "fr-FR" ou "en-US"
+
+// Définir la langue par défaut en fonction du navigateur
+if (userLang.startsWith("fr")) {
+  currentLang = "fr";
+} else {
+  currentLang = "en";
+}
+
 
 // Éléments du bouton
 const langBtn = document.getElementById("lang-toggle");
