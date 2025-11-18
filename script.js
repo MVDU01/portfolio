@@ -94,6 +94,7 @@ const translations = {
     nav_skills: "Compétences",
     nav_timeline: "Parcours",
     nav_contact: "Contact",
+    popup_text: "🚧 Ce site est actuellement en développement 🚧"
     },
   en: {
     hero_title: "Hello, I'm Malo-Valentin",
@@ -129,6 +130,7 @@ const translations = {
     nav_skills: "Skills",
     nav_timeline: "Journey",
     nav_contact: "Contact",
+    popup_text: "🚧 This site is currently under development 🚧"
   }
 };
 
