@@ -9,6 +9,52 @@ body {
 }
 
 /* === NAVBAR === */
+
+
+/* Cacher le menu burger sur desktop */
+.burger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Responsive pour mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  /* Ajuster les sections */
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-item {
+    width: 90%;
+    left: 0 !important;
+  }
+}
+
 header { position: sticky; top: 0; background: rgba(255,255,255,0.8); backdrop-filter: blur(8px); z-index: 100; }
 .navbar { display: flex; justify-content: space-between; align-items: center; padding: 1rem 3rem; }
 .logo { font-size: 1.8rem; font-weight: 700; color: #5a2ea6; }
@@ -48,6 +94,23 @@ header { position: sticky; top: 0; background: rgba(255,255,255,0.8); backdrop-f
   color: #555;
 }
 
+/* Bouton Télécharger CV */
+.btn-download {
+  display: inline-block;
+  background: linear-gradient(135deg, #6a0dad, #9b5de5);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-download:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(155, 93, 229, 0.5);
+}
 
 @keyframes gradientMove {
   0% { background-position: 0% 50%; }
@@ -133,7 +196,7 @@ header { position: sticky; top: 0; background: rgba(255,255,255,0.8); backdrop-f
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(147, 51, 234, 0.15);
-  transition: all 0.4s ease;
+  transition: all 0.4s ease, box-shadow 0.4s ease;
   opacity: 0;
   transform: translateY(30px);
   overflow: hidden;
@@ -167,6 +230,29 @@ header { position: sticky; top: 0; background: rgba(255,255,255,0.8); backdrop-f
   border-radius: 1rem;
   pointer-events: none;
 }
+
+
+.timeline-item:hover {
+  transform: scale(1.05) rotateY(5deg);
+  box-shadow: 0 15px 45px rgba(147, 51, 234, 0.4);
+  background: linear-gradient(135deg, rgba(147, 51, 234, 0.25), rgba(59, 130, 246, 0.25), rgba(236, 72, 153, 0.25));
+}
+
+
+.timeline-item:hover::before {
+  animation: glassShineHover 2s infinite;
+}
+
+
+@keyframes glassShineHover {
+  0% {
+    transform: translateX(-100%) skewX(-15deg);
+  }
+  100% {
+    transform: translateX(100%) skewX(-15deg);
+  }
+}
+
 
 /* Animation du reflet */
 @keyframes glassShine {
