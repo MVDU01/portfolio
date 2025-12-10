@@ -71,7 +71,7 @@ const translations = {
     timeline_title: "Mon Parcours",
     timeline1_date: "2025 - Présent",
     timeline1_title: "Bachelor Informatique - ESGI",
-    timeline1_text: "Découverte de différentes spécialisations.",
+    timeline1_text: "Formation complète en développement, systèmes et réseaux, avec une ouverture sur la cybersécurité et l’innovation numérique.",
     timeline2_title: "Baccalauréat Technologique",
     timeline2_text: "Bac STI2D Spécialité SIN — Mention Très Bien",
     socials_title: "Retrouvez-moi",
@@ -107,7 +107,7 @@ const translations = {
     timeline_title: "Journey",
     timeline1_date: "2025 - Present",
     timeline1_title: "Computer Science Bachelor's - ESGI",
-    timeline1_text: "Exploring different specializations.",
+    timeline1_text: "Comprehensive training in development, systems and networks, with a focus on cybersecurity and digital innovation.",
     timeline2_title: "Technological Baccalaureate",
     timeline2_text: "STI2D Bac, SIN specialization with highest honour",
     socials_title: "Find me",
@@ -200,4 +200,5 @@ document.addEventListener('DOMContentLoaded', () => {
     console.error('IDs introuvables : vérifie ton HTML');
   }
 });
+
 
