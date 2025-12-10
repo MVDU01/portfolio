@@ -16,12 +16,14 @@ body {
   display: none;
   font-size: 2rem;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 /* Responsive pour mobile */
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
+  
+.nav-links {
+    display: none !important; /* Caché par défaut */
     flex-direction: column;
     position: absolute;
     top: 70px;
@@ -30,15 +32,20 @@ body {
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    z-index: 999;
   }
 
   .nav-links.show {
-    display: flex;
+    display: flex !important; /* Affiche le menu quand .show est ajouté */
   }
 
   .burger {
-    display: block;
+    display: block; /* Affiche le bouton burger sur mobile */
+    font-size: 2rem;
+    cursor: pointer;
   }
+
 
   /* Ajuster les sections */
   .section {
@@ -50,8 +57,24 @@ body {
   }
 
   .timeline-item {
-    width: 90%;
+    width: 100%;
     left: 0 !important;
+    margin-left: 0;
+
+  }
+
+  #hero .hero-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  #hero .hero-content h3 {
+    font-size: 1.2rem;
+  }
+
+  
+  .popup-content {
+  width: 90%;
+  max-width: 400px;
   }
 }
 
