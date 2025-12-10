@@ -73,7 +73,7 @@ const translations = {
     timeline1_title: "Bachelor Informatique - ESGI",
     timeline1_text: "Découverte de différentes spécialisations.",
     timeline2_title: "Baccalauréat Technologique",
-    timeline2_text: "Bac STI2D Spécialité SIN",
+    timeline2_text: "Bac STI2D Spécialité SIN — Mention Très Bien",
     socials_title: "Retrouvez-moi",
     linkedin_btn: "Mon LinkedIn",
     contact_title: "Contact",
@@ -109,7 +109,7 @@ const translations = {
     timeline1_title: "Computer Science Bachelor's - ESGI",
     timeline1_text: "Exploring different specializations.",
     timeline2_title: "Technological Baccalaureate",
-    timeline2_text: "STI2D Bac, SIN specialization",
+    timeline2_text: "STI2D Bac, SIN specialization with highest honour",
     socials_title: "Find me",
     linkedin_btn: "My LinkedIn",
     contact_title: "Contact",
@@ -200,3 +200,4 @@ document.addEventListener('DOMContentLoaded', () => {
     console.error('IDs introuvables : vérifie ton HTML');
   }
 });
+
