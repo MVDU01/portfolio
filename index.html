@@ -8,26 +8,27 @@
   <link rel="icon" type="image/png" href="icone.png">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <h1 class="logo">MV<span>.</span></h1>
-      <ul class="nav-links">
-        <button id="lang-toggle" class="btn-lang">
-          <img id="lang-flag" src="gb-flag.png" alt="EN" class="flag-icon">
-          <span id="lang-text">EN</span>
-        </button>
-        <li><a href="#hero" id="nav_home">Accueil</a></li>
-        <li><a href="#about" id="nav_about">À propos</a></li>
-        <li><a href="#projects" id="nav_projects">Projets</a></li>
-        <li><a href="#skills" id="nav_skills">Compétences</a></li>
-        <li><a href="#timeline" id="nav_timeline">Parcours</a></li>
-        <li><a href="#contact" id="nav_contact">Contact</a></li>
+  
+<header>
+  <nav class="navbar">
+    <h1 class="logo">MV<span>.</span></h1>    
+    <div id="burger" class="burger">☰</div>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#hero">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#timeline">Parcours</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-      <div class="burger" id="burger">
-        ☰
-      </div>
-    </nav>
-  </header>
+  <button id="lang-toggle" class="btn-lang">
+    <img id="lang-flag" src="gb-flag.png" alt="EN" class="flag-icon">
+    <span id="lang-text">EN</span>
+  </button>
+  </nav>
+</header>
+
+
 
   <!-- HERO -->
 <section id="hero">
@@ -113,7 +114,7 @@
     <p>© 2025 Malo-Valentin Lequy • Portfolio</p>
   </footer>
 
-  <script src="script.js"></script>
+  
 
 <!-- Popup de développement -->
 <div id="dev-popup" class="popup">
@@ -122,6 +123,6 @@
     <button id="close-popup">OK</button>
   </div>
 </div>
-
+<script src="script.js"></script>
 </body>
 </html>
