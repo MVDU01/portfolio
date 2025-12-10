@@ -35,12 +35,6 @@ form.addEventListener('submit', async (e) => {
   }
 });
 
-const burger = document.getElementById('burger');
-const navLinks = document.getElementById('nav-links');
-
-burger.addEventListener('click', () => {
-  navLinks.classList.toggle('show');
-});
 
 // === Animation de la timeline au scroll (cascade) ===
 const timelineItems = document.querySelectorAll('.timeline-item');
@@ -190,3 +184,19 @@ langBtn.addEventListener("click", () => {
 // Initialisation au chargement
 setLanguage(currentLang);
 updateLangButton(currentLang);
+
+
+// === Gestion du menu burger ===
+document.addEventListener('DOMContentLoaded', () => {
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('nav-links');
+
+  if (burger && navLinks) {
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('show'); // Ajoute ou retire la classe .show
+      console.log('Burger cliqué, menu togglé'); // Debug
+    });
+  } else {
+    console.error('IDs introuvables : vérifie ton HTML');
+  }
+});
