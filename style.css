@@ -166,6 +166,57 @@ header { position: sticky; top: 0; background: rgba(255,255,255,0.8); backdrop-f
 }
 .project-card:hover { transform: translateY(-5px); }
 
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+/* Style de base pour les boutons de projet */
+.btn-project {
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1.4rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+/* Variante principale : lien vers le site */
+.btn-project.primary,
+.btn-project:not(.secondary) {
+  background: linear-gradient(135deg, #6a0dad, #9b5de5);
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(155, 93, 229, 0.4);
+}
+
+.btn-project.primary:hover,
+.btn-project:not(.secondary):hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(155, 93, 229, 0.6);
+}
+
+/* Variante secondaire : lien vers le code */
+.btn-project.secondary {
+  background: #f2e6ff;
+  color: #5a2ea6;
+  border: 1px solid #d3b3ff;
+}
+
+.btn-project.secondary:hover {
+  background: #e6d7ff;
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(140, 59, 255, 0.35);
+}
+
+
 /* === SKILLS === */
 .skills-list { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
 .skills-list span {
