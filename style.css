@@ -227,6 +227,84 @@ header { position: sticky; top: 0; background: rgba(255,255,255,0.8); backdrop-f
   font-weight: 500;
 }
 
+/* === CERTIFICATIONS === */
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.cert-card {
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* léger effet glass / glow pour rester cohérent avec le reste du site */
+.cert-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left,
+    rgba(155, 93, 229, 0.20),
+    transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.cert-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(155, 93, 229, 0.25);
+}
+
+.cert-card:hover::before {
+  opacity: 1;
+}
+
+.cert-badge {
+  width: 120px;
+  max-width: 60%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.15));
+}
+
+.cert-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.6rem;
+  color: #222;
+}
+
+.cert-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive léger (si tu veux resserrer sur petits écrans) */
+@media (max-width: 768px) {
+  .cert-card {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .cert-badge {
+    width: 100px;
+  }
+}
+
 /* === TIMELINE === */
 .timeline {
   position: relative;
@@ -517,3 +595,33 @@ footer {
   transform: scale(1.08); /* Zoom léger */
   box-shadow: 0 12px 30px rgba(155, 93, 229, 0.6); /* Glow accentué */
 }
+
+
+/* === TIMELINE RESPONSIVE - ALTERNANCE IDENTIQUE AU PC === */
+@media (max-width: 768px) {
+
+  /* Ligne au centre */
+  .timeline::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Taille des cartes adaptée au mobile */
+  .timeline-item {
+    width: 42% !important; /* comme sur PC → mais adapté mobile */
+    margin-bottom: 2rem;
+  }
+
+  /* CARTES À GAUCHE */
+  .timeline-item:nth-child(odd) {
+    left: 4% !important;  /* correspond à PC mais adapté à petit écran */
+  }
+
+  /* CARTES À DROITE */
+  .timeline-item:nth-child(even) {
+    left: 54% !important; /* juste à droite de la ligne */
+    padding-left: 0.8rem; 
+  }
+
+}
+
