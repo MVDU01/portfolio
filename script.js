@@ -63,7 +63,7 @@ const translations = {
     about_text: "Je suis un étudiant en informatique curieux et motivé, avec une affinité particulière pour la cybersécurité et la création d’expériences web modernes.",
     projects_title: "Mes Projets",
     project1_title: "Création d'un tutoriel d'installation",
-    project1_text: "Création d'un tutoriel détaillé pour l'installation de roles sur Windowds Server et test avec un client. Les deux machines ont été créés sur VMware.",
+    project1_text: "Création d'un tutoriel détaillé pour l'installation de roles sur Windows Server et test avec un client. Les deux machines ont été créés sur VMware.",
     tuto_download: "📄 Voir le tutoriel",
     project2_title: "Site web pour un événement Tech",
     project2_text: "Création d'un site web moderne pour un événement technologique fictif.",
