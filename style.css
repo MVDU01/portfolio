@@ -624,3 +624,14 @@ footer {
   }
 
 }
+
+
+/* === BANDEAU D'INFORMATION === */
+.info-banner {
+  background: linear-gradient(135deg, #6a0dad, #9b5de5);
+  color: white;
+  text-align: center;
+  padding: 0.6rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
