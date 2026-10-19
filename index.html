@@ -1,169 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Malo-Valentin | Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Malo-Valentin Lequy, étudiant en Bachelor Informatique à l’ESGI. Découvrez mes projets en systèmes, réseaux et développement web.">
+  <meta name="theme-color" content="#f6f4ef">
+  <meta name="robots" content="noindex,nofollow">
+  <meta property="og:title" content="Malo-Valentin Lequy — Portfolio">
+  <meta property="og:description" content="Systèmes, réseaux & curiosité. Une nouvelle direction pour mon portfolio informatique.">
+  <title>Malo-Valentin Lequy — Portfolio informatique</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%235f3dc4'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Arial' font-size='30' font-weight='bold' fill='white'%3EMV%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="icone.png">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  
-<header>
-  <nav class="navbar">
-    <h1 class="logo">MV<span>.</span></h1>    
-    <div id="burger" class="burger">☰</div>
-      <ul id="nav-links" class="nav-links">
-        <li><a href="#hero" id="nav_home">Accueil</a></li>
-        <li><a href="#about" id="nav_about">À propos</a></li>
-        <li><a href="#projects" id="nav_projects">Projets</a></li>
-        <li><a href="#skills" id="nav_skills">Compétences</a></li>
-        <li><a href="#timeline" id="nav_timeline">Parcours</a></li>
-        <li><a href="#contact" id="nav_contact">Contact</a></li>
-      </ul>
-  <button id="lang-toggle" class="btn-lang">
-    <img id="lang-flag" src="gb-flag.png" alt="EN" class="flag-icon">
-    <span id="lang-text">EN</span>
-  </button>
-  </nav>
-</header>
-
-
-
-  <!-- HERO -->
-<section id="hero">
-  <div class="hero-content">
-    <h2 id="hero_title">Bonjour, je suis Malo-Valentin</h2>
-    <h3 id="hero_subtitle">Étudiant en Bachelor Informatique</h3>
-    <p id="hero_text">Passionné par la cybersécurité, le développement web et l’innovation numérique.</p>
-    <a href="CV_Malo-Valentin_LEQUY_WEB.pdf" download class="btn-download" id="cv_download">📄 Télécharger mon CV</a>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="section">
-  <h2 id="about_title">À propos</h2>
-  <p id="about_text">Je suis un étudiant en informatique curieux et motivé, avec une affinité particulière pour la cybersécurité et la création d’expériences web modernes.</p>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="section">
-  <h2 id="projects_title">Mes Projets</h2>
-  <div class="projects-grid">
-    <div class="project-card">
-      <h3 id="project1_title">Création d'un tutoriel d'installation</h3>
-      <p id="project1_text">Création d'un tutoriel détaillé pour l'installation de roles sur Windows Server et test avec un client. Les deux machines ont été créés sur VMware.</p>
-      <a href="Tutoriel_Windows_Server.pdf" download class="btn-project" id="tuto_download">📄 Voir le tutoriel</a>
+  <a class="skip-link" href="#main" data-i18n="skip">Aller au contenu</a>
+  <div class="preview-note"><span class="preview-dot"></span><span data-i18n="preview">PROPOSITION V2</span><span class="preview-description" data-i18n="previewDesc">Une nouvelle forme, ton contenu actuel.</span><a href="https://mvdu01.github.io/portfolio/" target="_blank" rel="noopener noreferrer" data-i18n="original">Voir l’original ↗</a></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="#accueil" aria-label="Malo-Valentin Lequy — accueil">mv<span>.</span><span class="wordmark-name">Malo-Valentin<br>Lequy</span></a>
+      <nav aria-label="Navigation principale" id="navigation">
+        <a href="#projets" data-i18n="navProjects">Projets</a><a href="#competences" data-i18n="navSkills">Compétences</a><a href="#parcours" data-i18n="navJourney">Parcours</a>
+      </nav>
+      <div class="header-actions"><button id="language" class="language" aria-label="Switch to English">EN <span aria-hidden="true">↗</span></button><a class="contact-nav" href="#contact" data-i18n="navContact">Discutons <span aria-hidden="true">↗</span></a><button class="menu-toggle" aria-controls="navigation" aria-expanded="false" aria-label="Ouvrir le menu"><span></span><span></span></button></div>
     </div>
-    <div class="project-card">
-      <h3 id="project2_title">Site web pour un événement Tech</h3>
-      <p id="project2_text">Création d'un site web moderne pour un événement technologique fictif.</p>    
-      <a href="https://mvdu01.github.io/TechWave/" class="btn-project" id="btn_project_2" target="_blank" rel="noopener noreferrer" aria-label="Voir le site web de l'événement Tech dans un nouvel onglet"> 🌐 Voir le site </a>
-    </div>
-  </div>
-</section>
+  </header>
 
-<!-- SKILLS -->
-<section id="skills" class="section">
-  <h2 id="skills_title">Compétences</h2>
-  <div class="skills-list">
-    <span>HTML</span><span>CSS</span><span>JavaScript</span>
-    <span>Python</span><span id="skill_cyber">Cybersécurité</span><span>Debian</span>
-    <span>VMware</span><span>Hyper-V</span><span>Windows Server</span>
-    <span id="skill_admin">Administration Windows</span><span id="skill_support">Support Informatique</span><span id="skill_network">Réseaux</span>
-  </div>
-</section>
+  <main id="main">
+    <section id="accueil" class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span><span data-i18n="student">ÉTUDIANT EN BACHELOR INFORMATIQUE · ESGI</span></p>
+        <h1 id="hero-title">Malo-Valentin<br><span>Lequy<span class="title-dot">.</span></span></h1>
+        <p class="hero-tagline" data-i18n="tagline">Systèmes, réseaux<br><em>& curiosité.</em></p>
+        <p class="hero-description" data-i18n="heroDesc">Comprendre comment les choses fonctionnent, les faire communiquer et apprendre à les protéger. Bienvenue dans mon univers informatique.</p>
+        <div class="hero-buttons"><a class="button primary" href="#projets" data-i18n="explore">Explorer mes projets <span aria-hidden="true">↗</span></a><a class="text-link" href="https://mvdu01.github.io/portfolio/CV_Malo-Valentin_LEQUY_WEB.pdf" target="_blank" rel="noopener noreferrer" data-i18n="cv">Mon CV <span class="file-type">PDF</span><span aria-hidden="true">↓</span></a></div>
+        <div class="hero-foot"><span data-i18n="focus">MON TERRAIN D’EXPLORATION</span><p data-i18n="focusDesc">Infrastructure <i> / </i> Cybersécurité <i> / </i> Web</p></div>
+      </div>
+      <div class="hero-art" role="img" aria-label="Illustration d’un laboratoire virtuel avec un hôte VMware, un serveur Windows et un poste client" data-aria-i18n="artLabel">
+        <div class="art-grid"></div><span class="art-coordinate">FIG. 01 — HOME LAB</span><span class="art-top-right">SYS / NET</span>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-chip chip-top"><span class="tiny-dot"></span>VMware<span class="chip-sub" data-i18n="virtual">ENVIRONNEMENT VIRTUEL</span></div>
+        <svg class="network-lines" viewBox="0 0 500 500" fill="none" aria-hidden="true"><path d="M250 135V210M250 290V360M250 250H105V325M250 250H395V325" stroke="#b2a4df" stroke-width="1.5" stroke-dasharray="5 7"/><circle cx="250" cy="250" r="94" stroke="#a995db" stroke-opacity=".25"/><circle cx="250" cy="250" r="157" stroke="#a995db" stroke-opacity=".12"/><circle cx="105" cy="325" r="4" fill="#b7e3b6"/><circle cx="395" cy="325" r="4" fill="#b7e3b6"/></svg>
+        <div class="server-stack"><div class="server-top"><span class="server-logo">MV<span>_</span></span><span class="server-lights"><i></i><i></i><i></i></span></div><div class="server-unit"><span></span><b></b><i></i></div><div class="server-unit"><span></span><b></b><i></i></div><div class="server-unit"><span></span><b></b><i></i></div><div class="server-caption">WINDOWS SERVER<span>01</span></div></div>
+        <div class="terminal-mini"><div class="terminal-heading"><span>terminal</span><div><i></i><i></i><i></i></div></div><p><span>~</span> <span data-i18n="terminal">apprendre. tester. comprendre.</span><b>_</b></p></div>
+        <div class="client-mini"><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="6" y="5" width="28" height="21" rx="3"/><path d="M20 26v7M12 34h16"/></svg><span>CLIENT</span></div>
+        <div class="art-caption"><span class="tiny-dot"></span><span data-i18n="artCaption">Une idée. Un labo. De la pratique.</span><span class="art-arrow">↗</span></div>
+      </div>
+    </section>
 
-<!-- CERTIFICATIONS -->
-<section id="certifications" class="section">
-  <h2 id="certifications_title">Certifications</h2>
+    <div class="discipline-strip"><div class="wrap"><span>WINDOWS SERVER</span><b>✳</b><span>VMWARE</span><b>✳</b><span>DEBIAN</span><b>✳</b><span>PYTHON</span><b>✳</b><span>HTML / CSS / JS</span><b>✳</b></div></div>
 
-  <div class="certifications-grid">
-    <article class="cert-card">
-      <img
-        src="networking-basics.png"
-        alt="Badge Cisco Notions de base sur les réseaux"
-        class="cert-badge"
-      >
-      <h3 id="cert1_title">Cisco - Notions de base sur les réseaux</h3>
-      <p id="cert1_text">
-        Badge obtenu pour la certification Cisco « Notions de base sur les réseaux ».
-      </p>
-    </article>
-    <article class="cert-card">
-      <img
-        src="introduction-to-cybersecurity.png"
-        alt="Badge Cisco Introduction à la cybersécurité"
-        class="cert-badge"
-      >
-      <h3 id="cert2_title">Cisco - Introduction à la cybersécurité</h3>
-      <p id="cert2_text">
-        Badge obtenu pour la certification Cisco « Introduction à la cybersécurité ».
-      </p>
-    </article>
-  </div>
-</section>
+    <section id="projets" class="projects-section wrap section-space" aria-labelledby="projects-title">
+      <div class="section-heading"><div><p class="eyebrow" data-i18n="projectsEyebrow">01 / DE LA THÉORIE À LA PRATIQUE</p><h2 id="projects-title" data-i18n="projectsTitle">Ce que je <em>construis.</em></h2></div><p class="section-intro" data-i18n="projectsIntro">Deux projets, deux façons d’apprendre :<br>expérimenter l’infrastructure et créer pour le web.</p></div>
+      <article class="project project-infra">
+        <div class="project-visual infra-visual" aria-hidden="true"><div class="visual-label">LAB_01 / INFRASTRUCTURE</div><div class="lab-host"><span class="host-label">VMWARE / VIRTUAL LAB</span><div class="lab-machines"><div class="machine"><svg viewBox="0 0 40 40"><rect x="8" y="3" width="24" height="34" rx="4"/><path d="M13 12h14M13 20h14M13 28h7"/><circle cx="27" cy="29" r="1"/></svg><strong>Windows Server</strong><span>VM / 01</span></div><div class="lab-connection"><span></span><b>↔</b><small>RÉSEAU VIRTUEL</small></div><div class="machine"><svg viewBox="0 0 40 40"><rect x="4" y="5" width="32" height="23" rx="3"/><path d="M20 28v7M12 36h16"/></svg><strong>Poste client</strong><span>VM / 02</span></div></div></div><div class="visual-bottom"><span>DOCUMENTATION + EXPÉRIMENTATION</span><span>↗</span></div></div>
+        <div class="project-content"><div class="project-topline"><span data-i18n="infraCategory">SYSTÈMES & RÉSEAUX</span><span>01</span></div><h3 data-i18n="infraTitle">Un laboratoire virtuel<br>pour comprendre le serveur.</h3><p data-i18n="infraDesc">Installation de rôles Windows Server et tests avec un poste client, dans un environnement de deux machines virtuelles VMware. Le tout documenté dans un tutoriel.</p><div class="tags"><span>Windows Server</span><span>VMware</span><span data-i18n="documentation">Documentation</span></div><div class="project-actions"><button class="text-link" data-project="infra" data-i18n="caseStudy">Découvrir le projet <span aria-hidden="true">↗</span></button><a class="small-link" href="https://mvdu01.github.io/portfolio/Tutoriel_Windows_Server.pdf" target="_blank" rel="noopener noreferrer" data-i18n="tutorial">Tutoriel PDF ↓</a></div></div>
+      </article>
+      <article class="project project-web">
+        <div class="project-visual web-visual" aria-hidden="true"><div class="visual-label">WEB_02 / TECHWAVE</div><div class="browser-mock"><div class="mock-bar"><i></i><i></i><i></i><span>techwave / festival de l’innovation</span></div><div class="mock-body"><div class="mock-nav"><b>TECHWAVE<span>®</span></b><span>LE FESTIVAL &nbsp; PROGRAMME &nbsp; ↗</span></div><p>LE FUTUR SE RENCONTRE ICI.</p><h4>Tech.<br>People.<br><em>Tomorrow.</em></h4><div class="mock-badge">12—14<br>JUIN 2026</div><div class="mock-bottom"><span>PARIS · FRANCE</span><b>EXPLORER ↗</b></div></div></div><div class="visual-bottom"><span data-i18n="illustration">APERÇU ILLUSTRATIF DU PROJET</span><span>↗</span></div></div>
+        <div class="project-content"><div class="project-topline"><span data-i18n="webCategory">DÉVELOPPEMENT WEB</span><span>02</span></div><h3 data-i18n="webTitle">TechWave.<br>Donner vie à un événement.</h3><p data-i18n="webDesc">Un site pour un événement technologique fictif : présenter le festival, mettre en avant les intervenants et guider les visiteurs vers l’inscription.</p><div class="tags"><span data-i18n="webTag">Site événementiel</span><span>GitHub Pages</span><span data-i18n="personalProject">Projet fictif</span></div><div class="project-actions"><button class="text-link" data-project="web" data-i18n="caseStudy">Découvrir le projet <span aria-hidden="true">↗</span></button><a class="small-link" href="https://mvdu01.github.io/TechWave/" target="_blank" rel="noopener noreferrer" data-i18n="liveSite">Voir le site ↗</a></div></div>
+      </article>
+      <p class="editor-note"><span>↳</span><span data-i18n="projectNote">À enrichir avec ton contenu à jour : rôle précis, difficultés rencontrées, résultats et liens vers le code.</span></p>
+    </section>
 
-<!-- TIMELINE -->
-<section id="timeline" class="section">
-  <h2 id="timeline_title">Mon Parcours</h2>
-  <div class="timeline">
-    <div class="timeline-item">
-      <span class="date", id="timeline1_date">2025 - Présent</span>
-      <h3 id="timeline1_title">Bachelor Informatique - ESGI</h3>
-      <p id="timeline1_text">Formation complète en développement, systèmes et réseaux, avec une ouverture sur la cybersécurité et l’innovation numérique.</p>
-    </div>
-    <div class="timeline-item">
-      <span class="date", id="timeline2_date">2022 - 2025</span>
-      <h3 id="timeline2_title">Baccalauréat Technologique</h3>
-      <p id="timeline2_text">Bac STI2D Spécialité SIN — Mention Très Bien</p>
-    </div>
-  </div>
-</section>
+    <section id="competences" class="skills-section section-space" aria-labelledby="skills-title"><div class="wrap">
+      <div class="section-heading"><div><p class="eyebrow" data-i18n="skillsEyebrow">02 / MA BOÎTE À OUTILS</p><h2 id="skills-title" data-i18n="skillsTitle">Des bases.<br><em>Et l’envie d’aller plus loin.</em></h2></div><p class="section-intro" data-i18n="skillsIntro">Les technologies que j’explore,<br>reliées à ce que je réalise.</p></div>
+      <div class="skills-grid"><article class="skill-block"><span class="skill-icon">⌘</span><h3 data-i18n="systems">Systèmes & virtualisation</h3><p>Windows Server · Debian<br>VMware · Hyper-V</p><a href="#projets" data-i18n="systemsProof">En pratique : mon laboratoire virtuel ↗</a></article><article class="skill-block"><span class="skill-icon">&lt;/&gt;</span><h3 data-i18n="development">Développement</h3><p>HTML · CSS · JavaScript<br>Python</p><a href="https://mvdu01.github.io/TechWave/" target="_blank" rel="noopener noreferrer" data-i18n="webProof">À découvrir : le projet TechWave ↗</a></article><article class="skill-block"><span class="skill-icon">⌁</span><h3 data-i18n="security">Réseaux & sécurité</h3><p data-i18n="securityDesc">Notions de réseaux · Cybersécurité<br>Support · Administration Windows</p><a href="#formations" data-i18n="securityProof">Pour les bases : mes formations Cisco ↗</a></article></div>
+      <div class="certifications" id="formations"><div class="cert-label"><span data-i18n="learning">APPRENDRE EN CONTINU</span><p data-i18n="cisco">Mes badges Cisco</p></div><div class="cert-item"><img src="https://mvdu01.github.io/portfolio/networking-basics.png" width="64" height="64" loading="lazy" alt="Badge Cisco Networking Basics"><div><h3>Networking Basics</h3><p data-i18n="networkBadge">Notions de base sur les réseaux</p></div><span class="badge-check" aria-hidden="true">✓</span></div><div class="cert-item"><img src="https://mvdu01.github.io/portfolio/introduction-to-cybersecurity.png" width="64" height="64" loading="lazy" alt="Badge Cisco Introduction to Cybersecurity"><div><h3>Introduction to Cybersecurity</h3><p data-i18n="cyberBadge">Introduction à la cybersécurité</p></div><span class="badge-check" aria-hidden="true">✓</span></div></div>
+    </div></section>
 
-<!-- LINKEDIN -->
-<section id="socials" class="section">
-  <h2 id="socials_title">Retrouvez-moi</h2>
-  <a href="https://www.linkedin.com/in/malo-valentin-lequy/" target="_blank" class="linkedin-btn">
-    <img src="logo-linkedin.png" alt="LinkedIn" class="linkedin-logo" />
-    <span id="linkedin_btn">Mon LinkedIn</span>
-  </a>
-</section>
+    <section id="parcours" class="journey-section wrap section-space" aria-labelledby="journey-title"><div class="journey-intro"><p class="eyebrow" data-i18n="journeyEyebrow">03 / LE CHEMIN PARCOURU</p><h2 id="journey-title" data-i18n="journeyTitle">Curieux de nature.<br><em>Informaticien en devenir.</em></h2><p data-i18n="about">Je poursuis un Bachelor Informatique à l’ESGI. Ce qui m’intéresse : comprendre les infrastructures, expérimenter et transformer ce que j’apprends en réalisations concrètes.</p><div class="next-step"><span class="next-icon">↗</span><div><strong data-i18n="nextTitle">La prochaine étape ?</strong><p data-i18n="nextDesc">À personnaliser : ton objectif, ta disponibilité et ta mobilité.</p></div></div></div><div class="timeline"><article><span class="timeline-dot"></span><p class="date" data-i18n="esgiDate">2025 — AUJOURD’HUI</p><h3 data-i18n="esgiTitle">Bachelor Informatique</h3><span class="school">ESGI</span><p data-i18n="esgiDesc">Développement, systèmes et réseaux, avec une ouverture sur la cybersécurité.</p></article><article><span class="timeline-dot"></span><p class="date">2022 — 2025</p><h3 data-i18n="bacTitle">Baccalauréat STI2D</h3><span class="school" data-i18n="bacSpeciality">SPÉCIALITÉ SIN</span><p data-i18n="bacDesc">Systèmes d’information et numérique.<br><strong>Mention Très Bien.</strong></p></article></div></section>
 
-<!-- CONTACT -->
-<section id="contact" class="section">
-  <h2 id="contact_title">Contact</h2>
-  <form id="contactForm" action="https://formspree.io/f/xpwogdbg" method="POST">
-    <input type="text" id="name_placeholder" name="name" placeholder="Votre nom" required>
-    <input type="email" id="email_placeholder" name="email" placeholder="Votre email" required>
-    <textarea id="message_placeholder" name="message" rows="5" placeholder="Votre message" required></textarea>
-    <button type="submit" class="btn-submit" id="contact_button">Envoyer</button>
-  </form>
-  <div id="successMessage" class="hidden">✅ Message envoyé avec succès !</div>
-</section>
-
-
-
-  <footer>
-    <p>© 2025 Malo-Valentin Lequy • Portfolio</p>
-  </footer>
-
-
-<div class="info-banner">
-  <p id="info_text">
-    ✨ Ce site évolue en permanence afin d’être amélioré continuellement.
-  </p>
-</div>
-
-<script src="script.js"></script>
-<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "8ec9fca33f134e698a0baf44eacd2e00"}'></script><!-- End Cloudflare Web Analytics -->
+    <section id="contact" class="contact-section section-space" aria-labelledby="contact-title"><div class="wrap contact-layout"><div class="contact-copy"><p class="eyebrow" data-i18n="contactEyebrow">04 / ET SI ON ÉCHANGEAIT ?</p><h2 id="contact-title" data-i18n="contactTitle">Une question,<br>une idée,<br><em>une rencontre.</em></h2><p data-i18n="contactDesc">Mon parcours ou un projet t’intéresse ?<br>Retrouvons-nous sur LinkedIn pour en discuter.</p><a class="button light" href="https://www.linkedin.com/in/malo-valentin-lequy/" target="_blank" rel="noopener noreferrer" data-i18n="linkedin">Échanger sur LinkedIn <span aria-hidden="true">↗</span></a><a class="contact-cv" href="https://mvdu01.github.io/portfolio/CV_Malo-Valentin_LEQUY_WEB.pdf" target="_blank" rel="noopener noreferrer" data-i18n="cvContact">Consulter mon CV · PDF ↗</a></div><div class="contact-form-panel"><div class="form-heading"><h3 data-i18n="messageTitle">Un petit mot ?</h3><span data-i18n="demo">CONTACT</span></div><p class="form-note" data-i18n="formNote">Ton nom, ton e-mail et ton message seront transmis via FormSubmit pour me permettre de te répondre.</p><form id="contact-form" action="https://formsubmit.co/malovalentinlequy@gmail.com" method="POST"><input type="hidden" name="_subject" value="Nouveau message — Portfolio Malo-Valentin Lequy"><input type="hidden" name="_template" value="table"><input type="hidden" name="_url" value="https://mvdu01.github.io/portfolio/"><div style="display:none" aria-hidden="true"><label for="website-check">Laisser ce champ vide</label><input id="website-check" type="text" name="_honey" tabindex="-1" autocomplete="off"></div><div class="field"><label for="name" data-i18n="name">Ton nom</label><input id="name" name="name" autocomplete="name" required maxlength="100" placeholder="Camille Martin" data-placeholder-i18n="namePlaceholder"></div><div class="field"><label for="email" data-i18n="email">Ton adresse e-mail</label><input id="email" name="email" type="email" autocomplete="email" required maxlength="200" placeholder="camille@exemple.fr" data-placeholder-i18n="emailPlaceholder"></div><div class="field"><label for="message" data-i18n="message">Ton message</label><textarea id="message" name="message" rows="3" required maxlength="3000" placeholder="Parlons de…" data-placeholder-i18n="messagePlaceholder"></textarea></div><button class="button form-submit" type="submit" data-i18n="formSubmit">Envoyer mon message <span aria-hidden="true">↗</span></button><p id="form-status" role="status" aria-live="polite" hidden></p></form></div></div></section>
+  </main>
+  <footer class="wrap footer"><a class="footer-brand" href="#accueil">mv<span>.</span></a><p>© <span id="year">2026</span> Malo-Valentin Lequy<span class="footer-divider">/</span><span data-i18n="footer">Toujours en train d’apprendre.</span></p><a href="#accueil" data-i18n="backTop">Retour en haut ↑</a></footer>
+  <dialog id="project-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Fermer le détail du projet">×</button><p class="eyebrow" id="dialog-category"></p><h2 id="dialog-title"></h2><div id="dialog-body"></div></dialog>
 </body>
 </html>
-
-
-
-
-
-
-
-
