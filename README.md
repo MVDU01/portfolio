@@ -8,7 +8,7 @@ Portfolio personnel consacré à mon parcours en informatique, à mes projets et
 
 Le site est hébergé sur **GitHub Pages**. Il repose sur HTML, CSS et JavaScript, sans framework ni étape de compilation. Le formulaire utilise **FormSubmit.co** pour transmettre les messages par e-mail.
 
-Le contenu reste en cours d’actualisation : la présentation actuelle comprend encore le bandeau « Proposition V2 » et des indications « à compléter ».
+Le contenu reste en cours d’actualisation : certaines indications « à compléter » sont encore présentes.
 
 ## Évolutions réalisées
 
@@ -25,6 +25,7 @@ Le contenu reste en cours d’actualisation : la présentation actuelle comprend
 - Remplacement de l’ancienne logique de fenêtre de développement par les interactions de la nouvelle version.
 - Remplacement de Formspree par **FormSubmit.co**, avec confirmation d’envoi dans la page.
 - Actualisation du CV PDF.
+- Suppression du bandeau « Proposition V2 » et de son lien « Voir l’original ».
 - Nettoyage des anciennes images devenues inutiles : `fr-flag.png`, `gb-flag.png`, `logo-linkedin.png` et `icone.png`. L’icône du site est désormais un SVG intégré au HTML.
 
 ## Fonctionnalités
@@ -113,7 +114,7 @@ Pour changer la destination du formulaire, remplacer l’identifiant dans l’at
 - Préciser l’objectif professionnel, la disponibilité et la mobilité.
 - Compléter les fiches projets : rôle exact, versions, difficultés, tests, résultats et liens vers le code.
 - Ajouter les dates et liens de vérification des badges lorsque disponibles.
-- Retirer le bandeau « Proposition V2 », son lien « Voir l’original » et les annotations de préparation lorsque le contenu est prêt.
+- Retirer les annotations de préparation lorsque le contenu est prêt.
 - Revoir la directive `<meta name="robots" content="noindex,nofollow">`, encore présente : elle demande aux moteurs de ne pas indexer le site. La retirer lorsque le portfolio est prêt à être référencé.
 
 ---
