@@ -120,3 +120,11 @@ Pour changer la destination du formulaire, remplacer l’identifiant dans l’at
 ---
 
 Portfolio de **Malo-Valentin Lequy** — documentation actualisée le **19 octobre 2026**.
+
+## Animations intégrées le 20 octobre 2026
+
+Les effets validés dans la démonstration sont désormais chargés depuis `animations.css` et `animations.js` : accueil progressif, apparitions au défilement, serveur flottant, activité des voyants, circulation réseau, terminal animé, survol des projets, transitions des fiches, retour visuel d’envoi et relief à la souris.
+
+Le formulaire conserve son envoi réel via FormSubmit. Le retour visuel dépend de son état existant : aucune confirmation simulée. Les commandes de démonstration ont été retirées. Un bouton dans le pied de page permet de mettre les animations en pause. Les préférences de réduction des mouvements sont respectées et les effets de souris sont réservés aux périphériques adaptés.
+
+Les pages `mentions-legales.html` et `confidentialite.html`, ainsi que `legal.css`, restent accessibles depuis le pied de page et le formulaire.
